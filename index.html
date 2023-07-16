@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify- Find your music here</title>
+    <!--below is the line to link css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--we use nav to add navigation bar-->
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!--where the songs will be visible. it is not the bootstrap container class. in the js file everything will be writeen that what will be inside this container-->
+    <div class="container">
+        <div class="songList">
+            <h1>Best of My Favourite Music - Playlist</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">05:22 <i id="1" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:23 <i id="2" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:47 <i id="3" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">02:13<i id="4" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:26 <i id="5" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:27<i id="6" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:11 <i id="7" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">04:04<i id="8" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">05:51 <i id="9" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+                <div class="songItem">
+                    <img alt="1">
+                    <span class="songName"></span>
+                    <span class="songlistplay"><span class="timestamp">03:44 <i id="10" class="songItemPlay fa-regular fa-circle-play"></i></span></span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <!--the bottom part which shows which song is being played havinf pause, next and previous option-->
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+        <div class="icons">
+            <!--fontawesome icons-->
+            <i class="fa-3x fa-solid fa-backward-step" id="previous"></i>
+            <i class="fa-3x fa-regular fa-circle-play" id="masterPlay"></i>
+            <i class="fa-3x fa-solid fa-forward-step" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" width="42px" alt="" id="gif"> <span id="masterSongName">Moh Moh Ke Dhaage (Male)</span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/d7d6fdf47d.js" crossorigin="anonymous"></script>
+    <!--to add javascript file-->
+    <script src="script.js"></script>
+</body>
+</html>
